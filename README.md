@@ -20,7 +20,7 @@ the masked areas until none remain.
 
 ## Sampling Strategy Adjustments to maskGIT:
 In contrast to the original maskGIT, sampling solely from the most confident tokens can lead to mode collapse, often
-resulting in generating only stones or air. To address this, we've introduced a random sampling strategy. In the early
+resulting in generating only stones or air. To address this, I've introduced a random sampling strategy. In the early
 sampling phases, the confidence of potential tokens is disregarded, and tokens are selected for unmasking at random.
 
 You can fine-tune this behavior using the "random_steps" variable. It's crucial to strike a balance between "random_steps"
