@@ -9,6 +9,7 @@ it excels in filling spaces based on neighboring blocks, ensuring seamless integ
 
 ## Prerequisites:
 Ensure your server has the mcpi package installed. This code relies on it to place blocks.
+The model weights can be found [here](https://drive.google.com/file/d/1O6i-WQ-h6H_evhJifdiqhPbPFTC3UAF1/view?usp=drive_link)
 
 ## Functionality:
 This tool uses a special mask token, designated as 831. When you provide a tensor of shape [1,512] containing
