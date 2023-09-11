@@ -1,23 +1,12 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from prettytable import PrettyTable
 import math
 from tqdm import tqdm
 from einops import rearrange, repeat
 import time
 
-def count_parameters(model):
-    table = PrettyTable(["Modules", "Parameters"])
-    total_params = 0
-    for name, parameter in model.named_parameters():
-        if not parameter.requires_grad: continue
-        params = parameter.numel()
-        table.add_row([name, params])
-        total_params+=params
-    print(table)
-    print(f"Total Trainable Params: {total_params}")
-    return total_params
+
 
 
 #only enable for live visualization of results
@@ -26,15 +15,6 @@ def count_parameters(model):
 
 #only enable for live visualization of results
 #def place_voxel_blocks_in_minecraft(voxel,position):
-#    
-#    """
-#    Place the blocks from the voxel in the Minecraft world starting from the given point.
-#    
-#    Args:
-#    - start_x, start_y, start_z: Starting coordinates.
-#    - voxel: 3D array of shape 8x8x8 containing block types (and possibly subtypes).
-    
-#    """
 #    start_x,start_y,start_z = position
 #    for z in range(8):
 #        for y in range(8):
@@ -200,8 +180,6 @@ class GPT(nn.Module):
 
 if __name__ == '__main__':
     gpt = GPT(512,831,256,16,1).cuda()
-    count_parameters(gpt)
-
     x = torch.zeros(1,512).long().cuda()
     out = gpt(x, target=x)
     print(out.shape)
