@@ -18,7 +18,7 @@ block values ranging from 0-831(including the mask token), the generate function
 the masked areas until none remain.
 
 
-## Sampling Strategy Adjustments in maskGIT:
+## Sampling Strategy Adjustments to maskGIT:
 In contrast to the original maskGIT, sampling solely from the most confident tokens can lead to mode collapse, often
 resulting in generating only stones or air. To address this, we've introduced a random sampling strategy. In the early
 sampling phases, the confidence of potential tokens is disregarded, and tokens are selected for unmasking at random.
