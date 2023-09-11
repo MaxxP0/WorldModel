@@ -1,5 +1,6 @@
-![IMG_7621](https://github.com/MaxxP0/WorldModel/assets/95175667/a44c37e5-4951-469a-ae6a-9c5e4fff6568)
-![IMG_7622](https://github.com/MaxxP0/WorldModel/assets/95175667/22b11fd4-eaf2-4c50-95e3-f7e443947ea7)
+![IMG_7621](https://github.com/MaxxP0/WorldModel/assets/95175667/525c9f61-7e29-4cbf-8bbd-30421a10f763)
+![IMG_7622](https://github.com/MaxxP0/WorldModel/assets/95175667/58954cb3-78d8-4c32-a0d8-abaad2df0455)
+
 
 # WorldModel
 Note: This was a passion project, crafted in two days. I hope it can be of help to many!
