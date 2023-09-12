@@ -5,7 +5,7 @@
 # WorldModel
 Note: This was a passion project, crafted in two days. I hope it can be of help to many!
 
-WorldModel is a MaskDit model trained on 8x8x8 Minecraft voxel volumes. Beyond generating blocks from scratch,
+WorldModel is a MaskGIT model trained on 8x8x8 Minecraft voxel volumes. Beyond generating blocks from scratch,
 it excels in filling spaces based on neighboring blocks, ensuring seamless integration in Minecraft worlds
 
 The model weights can be found [here](https://drive.google.com/file/d/1O6i-WQ-h6H_evhJifdiqhPbPFTC3UAF1/view?usp=drive_link)
