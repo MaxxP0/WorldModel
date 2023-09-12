@@ -8,7 +8,7 @@ Note: This was a passion project, crafted in two days. I hope it can be of help 
 WorldModel is a MaskGIT model trained on 8x8x8 Minecraft voxel volumes. Beyond generating blocks from scratch,
 it excels in filling spaces based on neighboring blocks, ensuring seamless integration in Minecraft worlds
 
-The model weights can be found [here](https://drive.google.com/file/d/1O6i-WQ-h6H_evhJifdiqhPbPFTC3UAF1/view?usp=drive_link)
+The model weights can be found [here](https://drive.google.com/file/d/1--4Z5VQ-mRQz805yDmJPsPKrIrVCaoCv/view?usp=sharing)
 
 ## Prerequisites:
 Ensure your server has the mcpi package installed. This code relies on it to place blocks.
