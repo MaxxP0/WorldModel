@@ -1,7 +1,7 @@
 import torch
 from masked_model import GPT
 
-PATH1 = r'D:\ML\McGPT\TrainedModel\masked_gptMc_weights.pt'
+PATH1 = r'masked_gptMc_weights.pt'
 
 VOCAB_SIZE = 831
 SEQ_LENGH = int(8*8*8)
