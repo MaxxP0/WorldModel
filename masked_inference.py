@@ -1,12 +1,13 @@
 import torch
 from masked_model import GPT
-import torch.nn.functional as F
 
-PATH1 = r'masked_gptMc.pt'
+PATH1 = r'D:\ML\McGPT\TrainedModel\masked_gptMc_weights.pt'
 
 VOCAB_SIZE = 831
-gpt = GPT(512,VOCAB_SIZE)
-gpt = torch.load(PATH1).cuda().eval()
+SEQ_LENGH = int(8*8*8)
+gpt = GPT(SEQ_LENGH,VOCAB_SIZE,1024,16,22)
+gpt.load_state_dict(torch.load(PATH1))
+gpt = gpt.cuda().eval()
 
 
 my_list = torch.tensor([831] * 512)[None,:]
@@ -34,4 +35,3 @@ def place_voxel_blocks_in_minecraft(voxel):
 
 
 place_voxel_blocks_in_minecraft(pred)
-
